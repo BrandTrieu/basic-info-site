@@ -1,12 +1,3 @@
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+require('dotenv').config();
 
-  greet() {
-    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
-  }
-};
-
-module.exports = Person;
+console.log(process.env.TEST_ENVAR);
